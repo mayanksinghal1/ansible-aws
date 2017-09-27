@@ -1,0 +1,14 @@
+---
+ - hosts: localhost
+   sudo: yes
+   gather_facts: no
+   tasks:
+      - name: 'Install AWS CLI'
+        tags: 'aws-cli'
+        become: 'yes'
+        pip: > 
+          name=awscli
+          state=latest
+      - name: version
+        command: aws ec2 import-image --description "windows 2008 ova" --license-type BYOL --disk-containers file:///home/sonal/mayank/aws/ansible-aws/containers.json
+
