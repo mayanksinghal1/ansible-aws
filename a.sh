@@ -1,2 +1,2 @@
-printf $1'\n'$2'\neu-east\njson' | aws configure
+printf $1'\n'$2'\neu-west-1\njson' | aws configure
 

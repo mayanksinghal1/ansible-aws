@@ -3,7 +3,7 @@
     "Description": "Windows 2008 OVA",
     "Format": "ova",
     "UserBucket": {
-        "S3Bucket": "my-import-bucket",
-        "S3Key": "vms/my-windows-2008-vm.ova"
+        "S3Bucket": "ansiblebucketcoe",
+        "S3Key": "Ovaupload/Node2.ova"
     }
 }]
